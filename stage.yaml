@@ -1,0 +1,6 @@
+runtime: python39
+service: default
+entrypoint: gunicorn -b :$PORT src.main:app
+
+env_variables:
+    MSG: "hello"
